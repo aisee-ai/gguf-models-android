@@ -27,7 +27,7 @@ allprojects {
 
 ```gradle
 dependencies {
-    implementation 'com.github.aisee-ai:gguf-models-android:v1.0.5'
+    implementation 'com.github.jaliyanimanthako:test-llama:v1.0.5'
 }
 ```
 
