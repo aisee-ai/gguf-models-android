@@ -1,0 +1,51 @@
+# Gradle files
+.gradle/
+build/
+!*/src/main/**/build/
+**/build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Log and temp files
+*.log
+*.tmp
+
+# Android Studio settings
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Keystore files
+*.jks
+*.keystore
+
+# Mac system files
+.DS_Store
+
+# Generated files
+captures/
+output.json
+*.ap_
+*.apk
+*.aab
+
+# NDK and CMake build
+.externalNativeBuild/
+.cxx/
+
+# Gradle wrapper logs
+gradle-wrapper.log
+
+# Google Services plugin
+google-services.json
+
+# Jetpack Compose preview caches
+*.preview-cache/
+
+# Kotlin build
+*.kotlin_module
+
+# Misc
+*.orig
