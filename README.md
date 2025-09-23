@@ -1,16 +1,16 @@
 
-# 🦙 AiSee LLaMa Android SDK
+# AiSee LLaMa Android SDK
 
 An Android SDK for:
 
-* 🔍 Searching and retrieving `.gguf` LLaMA models from **Hugging Face**
-* 🧠 Running **on-device inference** with streamed responses
+*  Searching and retrieving `.gguf` LLaMA models from **Hugging Face**
+*  Running **on-device inference** with streamed responses
 
 Designed for private, efficient, mobile-friendly AI deployments.
 
 ---
 
-## 📦 Installation via JitPack
+##  Installation via JitPack
 
 1. Add JitPack to your root `build.gradle`:
 
@@ -43,7 +43,7 @@ Programmatically search Hugging Face for `.gguf` models.
 * Automatically fetch and parse model metadata
 * Support for pagination, sorting, and tree inspection (e.g., file structure)
 
-### 🧩 HF Package Contents
+###  HF Package Contents
 
 | File                          | Description                         |
 | ----------------------------- | ----------------------------------- |
@@ -56,7 +56,7 @@ Programmatically search Hugging Face for `.gguf` models.
 | `CustomDateDeserializer.java` | Parses `createdAt` timestamps       |
 | `CustomDateSerializer.java`   | Serializes timestamps for JSON      |
 
-### 🚀 Usage Example
+###  Usage Example
 
 ```java
 HFModelSearch modelSearch = new HFModelSearch();
@@ -79,7 +79,7 @@ for (HFModelSearch.ModelSearchResult result : results) {
 
 ---
 
-## 🧠 On-Device LLaMA Inference (`ai.aisee.llama.LLaMa`)
+##  On-Device LLaMA Inference (`ai.aisee.llama.LLaMa`)
 
 Run `.gguf` models with real-time streamed output.
 
@@ -91,7 +91,7 @@ Run `.gguf` models with real-time streamed output.
 * Final callback via `LlamaListener`
 * Auto-formatting of `<think>` tags
 
-### 🧩 LLaMa Package Contents
+###  LLaMa Package Contents
 
 | File                  | Description                                  |
 | --------------------- | -------------------------------------------- |
@@ -100,7 +100,7 @@ Run `.gguf` models with real-time streamed output.
 | `LLaMa.java`          | Core inference logic using native libraries  |
 | `GGUFReader.java`     | Utilities for reading `.gguf` model metadata |
 
-### 🚀 Inference Usage
+###  Inference Usage
 
 ```java
 ModelInference model = ModelInference.getInstance(context);
@@ -122,7 +122,7 @@ model.loadModel(modelUri,
 
 ---
 
-## 📁 Directory Structure
+##  Directory Structure
 
 ```
 ai.aisee.llama
@@ -144,14 +144,10 @@ ai.aisee.llama
 
 ---
 
-## 🧪 Pro Tips
+##  Pro Tips
 
 * Use Hugging Face search to dynamically discover models
 * Store downloaded `.gguf` models locally and load via `Uri`
 * Combine streamed `LiveData` responses with real-time UI feedback
 
 ---
-
-## 📜 License
-
-MIT License © 2025 [AiSee](https://github.com/aisee-ai)
